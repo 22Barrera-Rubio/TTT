@@ -1,7 +1,5 @@
-#include <iostream>
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+//#include "functions.h"
+
 
 /*
 Plan for this :

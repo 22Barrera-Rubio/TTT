@@ -1,3 +1,5 @@
+#include "functions.h"
+
 int entered;
 
 int dicer;
@@ -5,7 +7,7 @@ int dicer;
 rolls an input number of dice, then adds the dice together and displays the total.
 This should be a different tool than a roll and sparser , which would operate by asking for the number of dice, faces and the dice to start counting from before rolling ( same code as this one) and adding up the totals of every dice ( how many sixes, sevens, eights , ect)
 
-
+This specific one is basically done
 */
 
 int BaseRoll() {

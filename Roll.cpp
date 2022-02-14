@@ -1,3 +1,5 @@
+#include "functions.h"
+
 int entered;
 
 int dicer;
@@ -15,7 +17,7 @@ int BaseRoll() {
   std::cout << "Enter number of dice faces\n";
   std::cin >> entered;
   if (entered >= 50000){
-  std::  cout << "https://raw.githubusercontent.com/22Barrera-Rubio/imagething/40685fd14f644295d6d2e3c665ae5330008cb8bd/ecghbg.jpg?token=AXXFPYNHJAOIS3H6TQMDG5TCBLR3E    ";
+  std::cout << "https://raw.githubusercontent.com/22Barrera-Rubio/imagething/40685fd14f644295d6d2e3c665ae5330008cb8bd/ecghbg.jpg?token=AXXFPYNHJAOIS3H6TQMDG5TCBLR3E    ";
     return 0;
   }
   else
@@ -37,7 +39,7 @@ int BaseRoll() {
   for (int z = 0; z < dicecount; z++)
   {
     std::cout << "You rolled: ";
-    std::cout <<endl;
+    std::cout <<std::endl;
   
   dicer = rand() % entered + 1;
   totalnum = totalnum + dicer;
@@ -46,8 +48,8 @@ int BaseRoll() {
   }
   std::cout <<endl;
   std::cout << "Dice total is : ";
-  std::cout << totalnum <<endl;
-  std::cout <<endl;
+  std::cout << totalnum  <<;
+  std::endl;
   
   
   }
