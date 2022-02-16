@@ -1,5 +1,8 @@
-//#include "functions.h"
-
+#include "functions.h"
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /*
 Plan for this :
@@ -10,10 +13,10 @@ Has small option menu. This menu leads to the different functions, these functio
 
 
 */
-/*
 
-int main() {
-  std::cout << "Hello World!\n";
+
+int main(){
+
+ BaseRoll();
+  return 0;
 }
-
-*/
