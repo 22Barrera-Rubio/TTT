@@ -6,8 +6,13 @@
 #include <stdlib.h>
 #include <time.h>
 
-std::BaseRoll();
+using namespace std;
+int entered;
 
+int dicer;
 
+BaseRoll();
+
+////  need parser program thing
 
 #endif

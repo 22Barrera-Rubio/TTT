@@ -10,8 +10,10 @@ Has small option menu. This menu leads to the different functions, these functio
 
 
 */
-
+/*
 
 int main() {
   std::cout << "Hello World!\n";
 }
+
+*/

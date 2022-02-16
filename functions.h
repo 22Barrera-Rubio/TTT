@@ -7,8 +7,11 @@
 #include <time.h>
 
 using namespace std;
+int entered;
 
-std::BaseRoll();
+int dicer;
+
+BaseRoll();
 
 ////  need parser program thing
 
