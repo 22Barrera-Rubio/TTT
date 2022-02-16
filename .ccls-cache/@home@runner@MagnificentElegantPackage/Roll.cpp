@@ -1,16 +1,15 @@
-#include "functions.h"
 #include <iostream>
+#include "functions.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+// note: need to include dependencies for each individual file
 int entered;
 
 int dicer;
 /* 
 rolls an input number of dice, then adds the dice together and displays the total.
-This should be a different tool than a roll and sparser , which would operate by asking for the number of dice, faces and the dice to start counting from before rolling ( same code as this one) and adding up the totals of every dice ( how many sixes, sevens, eights , ect)
-
+This should be a different tool than a roll and parser , which would operate by asking for the number of dice, faces and the dice to start counting from before rolling ( same code as this one) and adding up the totals of every dice ( how many sixes, sevens, eights , ect)
 This specific one is basically done
 */
 
