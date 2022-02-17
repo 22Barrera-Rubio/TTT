@@ -16,16 +16,24 @@ This specific one is basically done
 int BaseRoll() {
   for (int i = 0; i < 1;){  
   
-  
+  cout << endl;
+  cout << ":::::::";
+  cout << endl;
   cout << "Enter number of dice faces\n";
   cin >> entered;
   if (entered >= 50000){
   cout << "too much  ";
     return 0;
   }
-  else
+  if (entered <= 0){
+    int main();
+    return 0;
+  } 
+  else{
+
+  
  cout << "How many dice?\n";
- 
+  }
   int dicecount{};
   int totalnum{};
   cin >> dicecount;
@@ -52,3 +60,6 @@ int BaseRoll() {
   
   }
 } 
+
+
+
