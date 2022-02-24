@@ -61,7 +61,7 @@ else
  // totalnum = totalnum + dicerz;
   if (dicerz >= thresh){
     cout << "                       " << dicerz << "    Above thresh" <<endl;
-    tnm + 1;
+    tnm = tnm + 1;
   }else{
   cout << "                       " << dicerz <<endl;
   
@@ -75,5 +75,5 @@ else
   
   
   }
-}
 
+  }

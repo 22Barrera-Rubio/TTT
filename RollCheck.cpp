@@ -16,6 +16,7 @@ int thresh;
 //below is mostly the same as BaseRoll
 
 int PRoll() {
+  
   for (int i = 0; i < 1;){  
   
 
@@ -32,24 +33,19 @@ int PRoll() {
   cout << "too much  ";
     return 0;
   }
-  if (enteredz <= 0){
-   //int main();
-    return 0;
-  } 
-  else{
 
   
  cout << "How many dice?\n";
-  }
   int dicecountz{};
   int tnm{}; //total num met
   cin >> dicecountz;
   if (dicecountz >= 50000){
     cout << "too much   ";
     return 0;
+    
   }
 
-else
+  
   srand(time(NULL));
   for (int z = 0; z < dicecountz; z++)
   {
@@ -61,7 +57,7 @@ else
  // totalnum = totalnum + dicerz;
   if (dicerz >= thresh){
     cout << "                       " << dicerz << "    Above thresh" <<endl;
-    tnm + 1;
+    tnm = tnm + 1;
   }else{
   cout << "                       " << dicerz <<endl;
   
@@ -75,5 +71,5 @@ else
   
   
   }
-}
 
+  }
