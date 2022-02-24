@@ -4,55 +4,46 @@
 #include <stdlib.h>
 #include <time.h>
 // note: need to include dependencies for each individual file
-//int entered;
-
-//int dicer;
 /* 
-rolls an input number of dice, then adds the dice together and displays the total.
-This should be a different tool than a roll and parser , which would operate by asking for the number of dice, faces and the dice to start counting from before rolling ( same code as this one) and adding up the totals of every dice ( how many sixes, sevens, eights , ect)
-This specific one is basically done
+rolls an input number of dice, then adds the dice together and displays the total and individual dice
 */
-int entered;
-
 int dicer;
-
 int BaseRoll() {
+  DStu Diceobj;
+  
   for (int i = 0; i < 1;){  
   
   cout << endl;
   cout << ":::::::";
   cout << endl;
   cout << "Enter number of dice faces\n";
-  cin >> entered;
-  if (entered >= 50000){
+  cin >> Diceobj.faces;
+  if (Diceobj.faces >= 50000){
   cout << "too much  ";
     return 0;
   }
-  if (entered <= 0){
-   //int main();
+  if (Diceobj.faces <= 0){
     return 0;
   } 
   else{
-
-  
  cout << "How many dice?\n";
   }
-  int dicecount{};
+
   int totalnum{};
-  cin >> dicecount;
-  if (dicecount >= 50000){
+  cin >> Diceobj.number;
+  if (Diceobj.number >= 50000){
     cout << "too much   ";
     return 0;
   }
   else
   srand(time(NULL));
-  for (int z = 0; z < dicecount; z++)
+  for (int z = 0; z < Diceobj.number; z++)
   {
     cout << "You rolled: ";    // just says you rolled
     cout <<endl;
   
-  dicer = rand() % entered + 1;    // dicer does random function, then modulo by enter //+ 1.  The +1 sets the minimum to prevent 0 die rolls and the modulo
-  // sets the maximum they can display to entered ( the face count)
+  dicer = rand() % Diceobj.faces + 1;    // dicer does random function, then modulo by enter //+ 1.  The +1 sets the minimum to prevent 0 die rolls and the modulo
+  // sets the maximum they can display to num ( the face count)
   totalnum = totalnum + dicer;
   cout << "                       " << dicer <<endl;
   
@@ -64,6 +55,3 @@ int BaseRoll() {
   
   }
 } 
-
-
-
