@@ -13,7 +13,11 @@ using namespace std;
 
 
 int BaseRoll();
-int PRoll();     // note shove the main functions into here, as they need to be //defined in .h BEFORE being used in the main.cpp
+int PRoll(); 
+int CharRun();
+int editor();
+int numberer();
+// note shove the main functions into here, as they need to be //defined in .h BEFORE being used in the main.cpp
 
 ////  need parser program thing
 
@@ -21,6 +25,16 @@ class DStu{
 public:
   int number;
   int faces;
-};   // note You can shove stuff into .h and you can use it anywhere. Nice
-
+};   
+class Charac{
+public:
+  string name;
+  int hp;
+  int mp;
+}; 
+class Numie{
+public:
+int min;
+int max;
+};
 #endif
